@@ -12,12 +12,13 @@ public class PlayerController : MonoBehaviour
     {
         playerRb = GetComponent<Rigidbody>();
         focalPoint = GameObject.Find("Focal Point");
+        
     }
 
     // Update is called once per frame
     void Update()
     {
-       float ForwardInput = ForwardInput.GetAxis("Vertical");
+      
        playerRb.AddForce(focalPoint.transform.forward *speed * ForwardInput);
     }
 }
