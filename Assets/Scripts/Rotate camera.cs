@@ -16,6 +16,6 @@ public class Rotatecamera : MonoBehaviour
     void Update()
     {
      
-        transform.Rotate(Vector3.Up ,horizontalInput * Time.deltaTime);
+        transform.Rotate(Vector3.up ,horizontalInput * Time.deltaTime);
     }
 }
